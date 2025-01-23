@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Escalas CLT</title>
+    <link rel="stylesheet" href="./calculadoraCLT.css">
+    <link rel="icon" href="./icon.png">
+    <meta name="color-scheme" content="dark">
+</head>
+<body>
+    <main id="main-screen">
+        <div class="instructions">
+            <h1>CALCULADORA DE ESCALAS CLT</h1>
+            <h4>Já se perguntou quanto tempo você gasta trabalhando? Vamos calcular!</h4>
+            <h4 id="introducao">Considerando um mês de 30 dias...</h4>
+        </div>
+
+        <div class="form-group">
+            <label for="salario">Digite o valor do seu salário:</label> <br>
+            <input
+                type="number"
+                id="salario"
+                min="0.1"
+                max="10000000000"
+                class="input"
+                tabindex="1"
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="transporte">Quanto tempo você gasta no transporte (tempo total de ida e volta):</label> <br>
+            <input
+                type="number"
+                id="transporte"
+                max="24"
+                min="1"
+                class="input"
+                tabindex="2"                
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="sono">Quanto tempo você dorme por dia:</label> <br>
+            <input
+                type="number"
+                id="sono"
+                max="24"
+                min="1"
+                class="input"
+                tabindex="3"                
+            />
+        </div>
+        
+        <div class="form-group">
+            <input
+                type="radio"
+                id="6x1"
+                name="escalas"
+                class="input-radio"
+                value="6x1"
+                tabindex="4"
+            />
+            <label for="6x1">6x1</label>
+
+            <input
+                type="radio"
+                id="5x2"
+                name="escalas"
+                class="input-radio"
+                value="5x2"
+                tabindex="5"
+            />
+            <label for="5x2">5x2</label>
+
+            <input
+                type="radio"
+                id="4x3"
+                name="escalas"
+                class="input-radio"
+                value="4x3"
+                tabindex="6"
+            />
+            <label for="4x3">4x3</label>
+
+            <input
+                type="radio"
+                id="12x36"
+                name="escalas"
+                class="input-radio"
+                value="12x36"
+                tabindex="7"
+            />
+            <label for="12x36">12x36</label>
+
+            <input
+                type="radio"
+                id="24x48"
+                name="escalas"
+                class="input-radio"
+                value="24x48"
+                tabindex="8"
+            />
+            <label for="24x48">24x48</label>
+        </div>
+
+        <button id="btnCalcular">Calcular</button>
+        <button id="btnLimpar">Limpar</button>
+
+        <h2 id="resultado"></h2>
+    </main>
+</body>
+    <script src="./calculadoraCLT.js"></script>
+</html>

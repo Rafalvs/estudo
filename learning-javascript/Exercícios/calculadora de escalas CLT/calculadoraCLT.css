@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 115%;
+}
+
+html {
+    height: 100%;
+    background-color: rgb(40,54,24);
+    background: linear-gradient(0deg, rgba(40,54,24,1) 0%, rgba(96,108,56,1) 100%);
+}
+
+body {
+    color: #fefae0;
+}
+
+h1 {
+    color: #dda15e;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+label {
+    color: #000000;
+}
+
+input[type='number'] {
+    margin: 5px;
+    color: #000000;
+    background-color: #a3b18a;
+    min-width: 200px;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+#introducao {
+    margin-bottom: 20px;
+}
+
+button {
+    color: #000000;
+    background-color: #a3b18a;
+    margin: 10px;
+    border: #283618;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #909e78;
+    cursor: pointer;
+}
+
+#resultado {
+    color: #dda15e;
+}
