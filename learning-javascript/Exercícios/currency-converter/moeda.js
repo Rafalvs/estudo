@@ -24,7 +24,7 @@ function message(currencyConverted) {
 }
 
 function block() {
-    if (numberInput.value == 0 || numberInput == "" || numberInput == null)
+    if (numberInput.value == 0 || numberInput == "" || numberInput == null || numberInput == NaN)
     {
         convert.setAttribute('disabled', 'disabled');
         convert.style.cursor = 'not-allowed';
@@ -55,26 +55,26 @@ convert.addEventListener('click', function () {
             }
         }
 
-switch(foreignCurrency) {
-    
-    case 'Dolar':
-        currencyConverted = realValue / dolarValue
-        message(currencyConverted.toLocaleString('en-US', { style: 'currency', currency: 'USD' }))
-    break;
+    switch(foreignCurrency) {
+        
+        case 'Dolar':
+            currencyConverted = realValue / dolarValue
+            message(currencyConverted.toLocaleString('en-US', { style: 'currency', currency: 'USD' }))
+        break;
 
-    case 'Euro':
-        currencyConverted = realValue / euroValue
-        message(currencyConverted.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' }))
-    break;
+        case 'Euro':
+            currencyConverted = realValue / euroValue
+            message(currencyConverted.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' }))
+        break;
 
-    case 'Pounds':
-        currencyConverted = realValue / poundsValue
-        message(currencyConverted.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' }))
-    break;
+        case 'Pounds':
+            currencyConverted = realValue / poundsValue
+            message(currencyConverted.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' }))
+        break;
 
-    default:
-        warning.textContent = 'Choice the currency';
-}
+        default:
+            warning.textContent = 'Choice the currency';
+    }   
     isNaN(currencyConverted) ? currencyConverted = 0 : '';
 });
 
