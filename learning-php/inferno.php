@@ -1,0 +1,3 @@
+<?
+ningume gosta de php
+>
