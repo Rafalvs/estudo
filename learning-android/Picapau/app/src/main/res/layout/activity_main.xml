@@ -1,76 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?><?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginbackground"
+    android:background="@drawable/menubackground"
     android:gravity="center"
     android:orientation="vertical"
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:cardBackgroundColor="#00FFFFFF">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
 
-        <LinearLayout
-            android:layout_width="376dp"
-            android:layout_height="485dp"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:padding="80dp">
+<!--        <-->
 
-            <TextView
-                android:id="@+id/loginText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:textAlignment="center"
-                android:textColor="#0CB6E7"
-                android:textSize="36sp"
-                android:textStyle="bold"                />
 
-            <EditText
-                android:id="@+id/username"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="40dp"
-                android:drawablePadding="8dp"
-                android:hint="Email: "
-                android:padding="8dp"
-                android:textColorHint="#000"
-                android:backgroundTint="#FF0000"
-                />
+<!--        ></androidx.cardview.widget.CardView>-->
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:drawablePadding="8dp"
-                android:hint="Senha"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColorHint="#000"
-                android:backgroundTint="#FF0000"
-                />
-
-            <Button
-                android:id="@+id/loginButton"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="30dp"
-                android:backgroundTint="#C51B1B"
-                android:text="Entrar"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:cornerRadius="20dp" />
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-</LinearLayout>
+    </LinearLayout>
