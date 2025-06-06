@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,9 +7,7 @@
     android:background="@drawable/loginbackground"
     android:gravity="center"
     android:orientation="vertical"
-    android:visibility="visible"
-    tools:context=".MainActivity"
-    tools:visibility="visible">
+    tools:context=".LoginScreen">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -31,7 +29,7 @@
                 android:textAlignment="center"
                 android:textColor="#0CB6E7"
                 android:textSize="36sp"
-                android:textStyle="bold"                />
+                android:textStyle="bold"/>
 
             <EditText
                 android:id="@+id/username"

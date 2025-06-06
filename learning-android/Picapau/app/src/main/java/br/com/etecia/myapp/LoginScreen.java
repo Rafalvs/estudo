@@ -2,12 +2,10 @@ package br.com.etecia.myapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class LoginScreen extends AppCompatActivity {
 
@@ -16,11 +14,16 @@ public class LoginScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_screen_layout);
 
-        // ... Your Login Logic (User Input, etc.) ...
+        Button btnLogin;
 
-        // After successful login, navigate to main app
-        Intent intent = new Intent(LoginScreen.this, MainActivity.class);
-        startActivity(intent);
-        finish();
+        btnLogin = findViewById(R.id.loginButton);
+
+        btnLogin.setOnClickListener(v -> {
+            // TODO Auto-generated method stub
+            Intent myIntent = new Intent(LoginScreen.this,
+                    MainActivity.class);
+            startActivity(myIntent);
+
+        });
     }
 }
