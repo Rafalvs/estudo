@@ -1,19 +1,54 @@
-import './App.css'
+import { useEffect, useState } from "react";
+import { createItem, readItems, updateItem, deleteItem } from "./services/firebaseService";
 
-export default function App() {
+function App() {
+  const [items, setItems] = useState([]);
+  const [newText, setNewText] = useState("");
+
+  useEffect(() => {
+    readItems(setItems);
+  }, []);
+
+  const handleAdd = () => {
+    if (newText.trim() === "") return;
+    createItem({ text: newText });
+    setNewText("");
+  };
+
+  const handleUpdate = (id) => {
+    const updatedText = prompt("Novo texto:");
+    if (updatedText) {
+      updateItem(id, { text: updatedText });
+    }
+  };
+
+  const handleDelete = (id) => {
+    if (window.confirm("Deseja realmente deletar?")) {
+      deleteItem(id);
+    }
+  };
 
   return (
-    <>
-    <p>pipipipopopo</p>
-    <h1>guilherme paiaço</h1>
-    <h2>PNEMONIA</h2>
-    <p>saguadinho</p>
-    <p>xarxixa</p>
-    <p>quejunto e preijo</p>
-    <p>embigo</p>
-    <p>anieligena</p>
-    <h3>ensonia</h3>
-    <h4>probrema</h4>
-    </>    
-  )
+    <div style={{ maxWidth: 600, margin: "auto", padding: 20 }}>
+      <h1>CRUD React + Firebase Realtime</h1>
+      <input
+        value={newText}
+        onChange={(e) => setNewText(e.target.value)}
+        placeholder="Digite algo"
+      />
+      <button onClick={handleAdd}>Adicionar</button>
+
+      <ul>
+        {items.map(({ id, text }) => (
+          <li key={id}>
+            {text}{" "}
+            <button onClick={() => handleUpdate(id)}>Editar</button>{" "}
+            <button onClick={() => handleDelete(id)}>Deletar</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
+
+export default App;
