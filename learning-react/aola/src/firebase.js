@@ -7,14 +7,13 @@ import { getDatabase } from "firebase/database";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD0UKJEx9uabr6Tp10QjdfEp3M5ItJiSWY",
-  authDomain: "aola-2f4b8.firebaseapp.com",
-  databaseURL: "https://aola-2f4b8-default-rtdb.firebaseio.com",
-  projectId: "aola-2f4b8",
-  storageBucket: "aola-2f4b8.firebasestorage.app",
-  messagingSenderId: "159861647282",
-  appId: "1:159861647282:web:23e29fd255af32a8e9a6ab",
-  measurementId: "G-EQSKZZRECT"
+  apiKey: "SUA_API_KEY",
+  authDomain: "SEU_AUTH_DOMAIN",
+  databaseURL: "SUA_DATABASE_URL",
+  projectId: "SEU_PROJECT_ID",
+  storageBucket: "SEU_STORAGE_BUCKET",
+  messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+  appId: "SEU_APP_ID"
 };
 
 // Initialize Firebase
