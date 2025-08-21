@@ -8,11 +8,11 @@
 		<version>3.4.8</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.etecia</groupId>
-	<artifactId>epictask</artifactId>
+	<groupId>etecia.com.br</groupId>
+	<artifactId>EpicTask</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>epictask</name>
-	<description>Um app de gestão de projetos</description>
+	<name>EpicTask</name>
+	<description>Projeto aula DS</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -30,6 +30,14 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok-maven</artifactId>
+			<version>1.18.20.0</version>
+			<type>pom</type>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
